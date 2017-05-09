@@ -1,0 +1,6 @@
+{
+  "name": "gigya-screenset-boilerplate",
+  "description": "Really simple node app that you can clone to use for Gigya screenset prototypes.",
+  "repository": "https://github.com/maxmckenzie/gigya-screensets-boilerplate",
+  "keywords": ["node", "express", "static"]
+}
