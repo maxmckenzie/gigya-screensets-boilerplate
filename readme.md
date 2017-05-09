@@ -31,4 +31,20 @@ This will boot the development server and the app will be available on [localhos
 
 ## A note on the Express server
 
-Gigya's screensets are designed to work client side with minimal setup. As such the only reason there is a node server in this project is just for ease of use. You can just navigate to the `index.html` file and it will work as any other html file would. The node server becomes useful when you need to test some scenarios or if you would prefer to use compilers such as LESS or Babel on the front end (speaking of which this would likely be better off with webpack outputting static files, but for the moment thats a bit ott).
+Gigya's screensets are designed to work client side with minimal setup. As such the only reason there is a node server in this project is just for ease of use. You can just navigate to the `index.html` file and it will work as any other html file would. The node server becomes useful when you need to test some scenarios or if you would prefer to use compilers such as LESS or Babel on the front end
+
+> speaking of which this would likely be better off with webpack outputting static files so one could use LESS, SASS etc, but for the moment thats a bit ott.
+
+## Static assets deployment
+
+It may be that you only have a server with apache or similar available or that you have a sandbox where you use relative paths for each prototype e.g http://example.com/app1, http://example.com/app2, http://example.com/app3
+
+You can bundle the public assets and the index.html by running the command `sh static-bundle.sh` from the root of the project. This will create a static-bundle directory
+
+Once the static-bundle directory has been made it will ask you if you wish to upload it via SSH and what what the relative url will be. You need to enter the whole domain and path if using one other wise your assets will 404. If you are serving the files from the root of the domain i.e example.com then you can leave this as it is.
+
+ooooooorrrrrrrrrr
+
+just click this
+
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
