@@ -2,7 +2,7 @@ import express from 'express'
 import path from 'path'
 const app = express()
 
-app.use('/static', express.static(process.cwd() + '/public'))
+app.use('/public', express.static(process.cwd() + '/public'))
 
 app.get('/', function (req, res) {
   res.sendFile(process.cwd() + '/index.html')
