@@ -33,7 +33,8 @@ if [ "$upload" == "y" ]; then
 
   # set remote directory
   echo ""
-  echo "which directory on the remote server would you like to upload to? (This is relative to your user folder)"
+  echo "which directory on the remote server would you like to upload to?"
+  echo "This is relative to your user folder and most likely starts with /public"
   read directory
 
   echo ""
